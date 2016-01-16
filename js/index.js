@@ -1,3 +1,5 @@
+// edit if you want to 
+
 $(function() {
   init();
 });
@@ -52,8 +54,7 @@ function hideContainers() {
     var promise = hideContainer(i);
     promises.push(promise);
   }
-
-  // apply
+  
   return $.when.apply(undefined, promises).promise();
 }
 
@@ -78,7 +79,6 @@ function setAnimations() {
     promises.push(promise);
   }
 
-  // apply
   return $.when.apply(undefined, promises).promise();
 }
 
